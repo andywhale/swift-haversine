@@ -70,4 +70,6 @@ let locationFrom = location(name: "York", longitude: 1.0803, latitude: 53.9583)
 let locationTo = location(name: "Bristol", longitude: 2.5833, latitude: 51.4500)
 
 let distanceCalculator = distance()
-distanceCalculator.sphericalDistanceInMiles(locationFrom, locationTo: locationTo)
+let distanceBetweenPoints = distanceCalculator.sphericalDistanceInMiles(locationFrom, locationTo: locationTo)
+
+print("Distance between \(locationFrom.name) and \(locationTo.name) is approximately \(round(distanceBetweenPoints)) miles")
